@@ -10,9 +10,13 @@ const clearButton = document.getElementById('clear');
 const equalsButton = document.getElementById('equals');
 //const twoozerosButton = document.getElementById('twoozeros');
 const plus = document.getElementById('plus');
+plus.type = 'button';
 const minus = document.getElementById('minus');
+minus.type = 'button';
 const divideby = document.getElementById('divideby');
+divideby.type = 'button';
 const times = document.getElementById('times');
+times.type = 'button';
 
 //Appliquer une action à chaque élement,
 
@@ -45,7 +49,7 @@ divideby.addEventListener('click', () => {
     enterInput.value= '';
 })
 times.addEventListener ('click', () => {
-    etiqueteCalcul.innerText= enterInput.value + '*';
+    etiqueteCalcul.innerText= enterInput.value + 'x';
     enterInput.value= '';
 }) 
 
